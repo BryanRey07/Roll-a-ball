@@ -26,8 +26,7 @@ public float velocidad;
     {
     float movimientoH = Input.GetAxis("Horizontal");
         float movimientoV = Input.GetAxis("Vertical");
-    Vector3 movimiento = new Vector3(movimientoH, 0.0f,
-    movimientoV);
+    Vector3 movimiento = new Vector3(movimientoH, 0.0f,movimientoV);
     rb.AddForce(movimiento * velocidad);
     }
     void OnTriggerEnter(Collider other)
